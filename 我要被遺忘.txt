@@ -1,0 +1,6 @@
+警告：在“.vscode/settings.json”的工作副本中，下次 Git 觸及時 LF 將被 CRLF 替換
+警告：在“css/index.css”的工作副本中，下次 Git 觸及它時，LF 將被 CRLF 替換
+警告：在“css/swiper-bundle.min.css”的工作副本中，下次 Git 觸及它時 LF 將被 CRLF 替換
+警告：在“index.html”的工作副本中，下次 Git 觸及它時，LF 將被 CRLF 替換
+警告：在“js/swiper-bundle.min.js”的工作副本中，下次 Git 觸及它時 LF 將被 CRLF 替換
+警告：在“scss/index.scss”的工作副本中，下次 Git 觸及它時，LF 將被 CRLF 替換
