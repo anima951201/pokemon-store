@@ -25,7 +25,7 @@ var mySwiper2 = new Swiper(".card-container", {
   // spaceBetween: 30, // 卡片與卡片之間的距離
   loop: true, // 無限循環
   autoplay: true,
-  // speed: 3000,
+  speed: 3000,
   // effect: 'slide'
 });
 

@@ -156,7 +156,54 @@
 }
 
 .card-container {
-  background-color: red;
+  margin: 20px 0;
+  overflow: hidden;
+
+  // background-color: red;
+  .card-wrap {
+    margin: 0 10px 0 0;
+    padding: 15px;
+    position: relative;
+    height: 340px;
+    border: 1px solid #cacaca;
+    // border-radius: 5px;
+
+    .card-img {
+      margin: 0 auto;
+      width: 150px;
+      // height: 100px;
+    }
+
+    .card-kind {
+      display: inline-block;
+      margin: 2px 2px 0 0;
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: #fff;
+      background-color: $color-red;
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .card-title {
+      font-size: 18px;
+    }
+
+    .card-info {
+      padding: 5px 0;
+      font-size: 14px;
+      color: #666;
+      border-bottom: 1px solid #666;
+    }
+
+    .card-price {
+      // font-size: 18px;
+      font-weight: 700;
+      color: $color-deep-green;
+    }
+  }
 }
 
 .footer {
