@@ -156,24 +156,8 @@
 }
 
 .card-container {
-  overflow: hidden;
-
-  .card-slide {
-    display: flex;
-
-    autoplay .card-wrap {
-      margin: 0 10px;
-      min-width: 270px;
-      height: auto;
-      background-color: #eee;
-
-      .card-img {
-        width: 150px;
-      }
-    }
-  }
+  background-color: red;
 }
-
 
 .footer {
   font-size: 14px;
