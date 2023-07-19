@@ -156,21 +156,22 @@
 }
 
 .card-container {
+  position: relative;
   margin: 20px 0;
   overflow: hidden;
 
   // background-color: red;
   .card-wrap {
-    margin: 0 10px 0 0;
+    // margin: 0 3px;
     padding: 15px;
-    position: relative;
     height: 340px;
     border: 1px solid #cacaca;
-    // border-radius: 5px;
+
 
     .card-img {
+      // background-color: pink;
       margin: 0 auto;
-      width: 150px;
+      max-width: 150px;
       // height: 100px;
     }
 
@@ -198,11 +199,28 @@
       border-bottom: 1px solid #666;
     }
 
-    .card-price {
-      // font-size: 18px;
-      font-weight: 700;
-      color: $color-deep-green;
+    .price-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      .new-price {
+        // font-size: 18px;
+        font-weight: 700;
+        color: $color-deep-green;
+      }
+
+      .old-price {
+        font-size: 10px;
+
+      }
     }
+  }
+
+  .card-pagination {
+    // margin: 0 auto;
+    text-align: center;
+    // background-color: red;
   }
 }
 

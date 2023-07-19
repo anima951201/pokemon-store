@@ -172,19 +172,18 @@ h2 {
 }
 
 .card-container {
+  position: relative;
   margin: 20px 0;
   overflow: hidden;
 }
 .card-container .card-wrap {
-  margin: 0 10px 0 0;
   padding: 15px;
-  position: relative;
   height: 340px;
   border: 1px solid #cacaca;
 }
 .card-container .card-wrap .card-img {
   margin: 0 auto;
-  width: 150px;
+  max-width: 150px;
 }
 .card-container .card-wrap .card-kind {
   display: inline-block;
@@ -207,9 +206,20 @@ h2 {
   color: #666;
   border-bottom: 1px solid #666;
 }
-.card-container .card-wrap .card-price {
+.card-container .card-wrap .price-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.card-container .card-wrap .price-wrap .new-price {
   font-weight: 700;
   color: #48a38e;
+}
+.card-container .card-wrap .price-wrap .old-price {
+  font-size: 10px;
+}
+.card-container .card-pagination {
+  text-align: center;
 }
 
 .footer {
