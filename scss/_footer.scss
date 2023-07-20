@@ -1,0 +1,18 @@
+.footer {
+  font-size: 14px;
+  color: #666;
+
+  >div:first-child {
+    text-align: center;
+  }
+
+  .info-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+
+  .footer-logo {
+    width: 210px;
+  }
+}

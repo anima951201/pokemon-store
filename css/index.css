@@ -43,6 +43,22 @@ h2 {
   font-weight: 700;
 }
 
+.footer {
+  font-size: 14px;
+  color: #666;
+}
+.footer > div:first-child {
+  text-align: center;
+}
+.footer .info-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.footer .footer-logo {
+  width: 210px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -220,20 +236,4 @@ h2 {
 }
 .card-container .card-pagination {
   text-align: center;
-}
-
-.footer {
-  font-size: 14px;
-  color: #666;
-}
-.footer > div:first-child {
-  text-align: center;
-}
-.footer .info-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-.footer .footer-logo {
-  width: 200px;
 }/*# sourceMappingURL=index.css.map */

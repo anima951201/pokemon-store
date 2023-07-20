@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1080px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #53acac;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.box {
+  position: relative;
+  top: 25vh;
+  margin: 0 auto;
+  width: 300px;
+}
+.box > img {
+  margin-bottom: 20px;
+}
+.box .anibox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+.box .anibox .truck {
+  width: 80px;
+  position: absolute;
+  bottom: -35px;
+}
+.box .signin-input {
+  width: 100%;
+  font-size: 16px;
+  color: #666;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  margin: 5px;
+  letter-spacing: 2px;
+  background: #fff;
+  font-family: Noto Sans TC, sans-serif;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.box .signin-button {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  width: 100%;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Noto Sans TC, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  background: #e65a41;
+  color: #fff;
+  letter-spacing: 2px;
+  border-radius: 3px;
+}/*# sourceMappingURL=signin.css.map */
