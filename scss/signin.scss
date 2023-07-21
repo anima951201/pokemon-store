@@ -1,5 +1,15 @@
 @import "reset";
 
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
 .box {
   // 亂搞的上下置中hhhhh
   position: relative;
@@ -30,21 +40,21 @@
       position: absolute;
       bottom: -35px;
 
-      // @include keyframes(fade) {
-      //   0% {
-      //     right: -20%;
-      //   }
+      @include keyframes(truckani) {
+        0% {
+          right: -20%;
+        }
 
-      //   50% {
-      //     right: 50%;
-      //   }
+        50% {
+          right: 50%;
+        }
 
-      //   100% {
-      //     right: 100%;
-      //   }
-      // }
+        100% {
+          right: 100%;
+        }
+      }
 
-      // @include animate(fade, 1s, linear, 1);
+      @include animate(truckani, 10s, linear, infinite);
     }
   }
 
@@ -80,15 +90,5 @@
     color: #fff;
     letter-spacing: 2px;
     border-radius: 3px;
-  }
-}
-
-@mixin animate($animation, $duration, $method, $times) {
-  animation: $animation $duration $method $times;
-}
-
-@mixin keyframes($name) {
-  @keyframes #{$name} {
-    @content;
   }
 }
