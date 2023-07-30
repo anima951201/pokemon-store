@@ -59,6 +59,26 @@ h2 {
   width: 210px;
 }
 
+.loading {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  opacity: 1;
+}
+.loading > img {
+  width: 120px;
+}
+
+.close {
+  display: none;
+  opacity: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -134,12 +154,30 @@ h2 {
   background-position: center;
 }
 
-.slogan {
-  margin: 20px 0;
+.slogan-wrap {
+  text-align: center;
+}
+.slogan-wrap .slogan {
+  margin: 20px auto;
   font-size: 32px;
   font-weight: 900;
   color: #2b447d;
-  text-align: center;
+  width: 18em;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  border-right: 0.05em solid;
+  animation: typing 3s steps(20) 1, caret 1s steps(1) infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
 }
 
 .news {
